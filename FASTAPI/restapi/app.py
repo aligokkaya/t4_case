@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from crud.main import t
+from main.main import t
 import uvicorn
 app = FastAPI()
 
