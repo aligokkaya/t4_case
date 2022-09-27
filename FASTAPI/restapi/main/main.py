@@ -1,3 +1,4 @@
+from hashlib import new
 from fastapi import APIRouter,FastAPI
 import requests
 from database.database import conn
@@ -94,26 +95,51 @@ async def get_meet(data: Union[List,Dict,Any]=None):
 
 @t.post('/v1/t4/update/')
 async def get_month(data:Union[List,Dict,Any]=None):
-    
+    db=[]
+    req=[]
+    new_d=[]
     db_get_data=conn.execute(t4_data.select()).fetchall()
-    print(type(db_get_data))
+    # print(type(db_get_data))
     # results_as_dict = db_get_data.mappings().all()
     # print(results_as_dict)
     for i in range(len(data['data'])):
+        req.append(data['data'][i]['meeting_id'])
         for j in range(len(db_get_data)):
-            print(data['data'][i]['meeting_id'])
-            print(db_get_data[j][1])
-            if data['data'][i]['meeting_id'] == db_get_data[j][1]:
-                print('a')
-                conn.execute(t4_data.update().where(t4_data.c.meeting_id == data['data'][i]['meeting_id']).set(
-                        meeting_attendees= db_get_data[j][2],
-                        meeting_start_datetime = db_get_data[j][3],
-                        meeting_end_datetime= db_get_data[j][4],
-                        is_online = db_get_data[j][5],
-                        organizer= db_get_data[j][6], 
+            db.append(db_get_data[j][1])
+            if req[i] == db[j]:
+                conn.execute(t4_data.update().values(
+                    meeting_id = data['data'][i]['meeting_id'],
+                    meeting_attendees= data['data'][i]['meeting_attendees'],
+                    meeting_start_datetime = data['data'][i]['meeting_start_datetime'],
+                    meeting_end_datetime= data['data'][i]['meeting_end_datetime'],
+                    is_online = data['data'][i]['is_online'],
+                    organizer= data['data'][i]['organizer'], 
                 ))
+            else:
+                new_d.append(data['data'][i]['meeting_id'])
+                # conn.execute(t4_data.select().where(t4_data.c.organizer == str(data['email'])))
+                # conn.execute(t4_data.update().value(
+                #     meeting_id = data['data'][i]['meeting_id'],
+                #     meeting_attendees= data['data'][i]['meeting_attendees'],
+                #     meeting_start_datetime = data['data'][i]['meeting_start_datetime'],
+                #     meeting_end_datetime= data['data'][i]['meeting_end_datetime'],
+                #     is_online = data['data'][i]['is_online'],
+                #     organizer= data['data'][i]['organizer'], 
+                # ))
 
-          
+    new_d=list(set(new_d))
+    print(new_d) 
+    for j in range(len(new_d)):
+        for i in range(len(data['data'])):
+            if new_d[j]==data['data'][i]['meeting_id']:
+                    conn.execute(t4_data.insert().values(
+                    meeting_id= data['data'][i]['meeting_id'],
+                    meeting_attendees= data['data'][i]['meeting_attendees'],
+                    meeting_start_datetime = data['data'][i]['meeting_start_datetime'],
+                    meeting_end_datetime= data['data'][i]['meeting_end_datetime'],
+                    is_online = data['data'][i]['is_online'],
+                    organizer= data['data'][i]['organizer'], 
+                ))
 
     return JSONResponse({'status':'ok'}),200
 
