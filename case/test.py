@@ -1,8 +1,4 @@
-# import requests
 
-# r=requests.get('http://127.0.0.1:8000/v1/t4/')
-
-# print(r.text)
 
 # import mysql.connector
 
@@ -71,13 +67,13 @@
 # print(res.text)
 
 ################### 5. Madde
-import json
-import requests
+# import json
+# import requests
 
 
-with open('AdditionalMeetingData.json', 'r') as f:
-  data = json.load(f)
+# with open('AdditionalMeetingData.json', 'r') as f:
+#   data = json.load(f)
 
-js={'data':data}
-# print(js)
-res = requests.post("http://127.0.0.1:8000/v1/t4/update/",data=json.dumps(js))
+# js={'data':data}
+# # print(js)
+# res = requests.post("http://127.0.0.1:8000/v1/t4/update/",data=json.dumps(js))

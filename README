@@ -1,0 +1,140 @@
+Kurulum:
+
+FASTAPI+ORM+MYSQL+SQLAlchemy+Docker
+
+
+MySQL kurulumu 
+Mysql-Docker_hub
+
+
+````
+docker image pull mysql
+docker image pull phpmyadmin/phpmyadmin
+docker run --name mysql-server -e MYSQL_ROOT_PASSWORD=Challenge_t4 -p 3306:3306 mysql
+docker run --name padmin -p 3305:80 --link mysql-server:db phpmyadmin/phpmyadmin
+
+````
+
+http://164.92.161.222:3305/
+
+
+Sunucumuzda mysql artık kullanıma hazırdır.
+
+
+FastAPI kurulum 
+
+Yazılan kodları sunucumuza çektikten sonra
+
+
+````
+docker build ./ --tag t4  
+docker run --restart always -d --network=host --name t4_deploy t4 
+
+````
+
+Artık sistem çalışır durumdadır.
+
+
+http://164.92.161.222:5000/
+
+
+
+
+.........
+
+
+
+
+ENDPOINT
+
+istek atacak Endpointler  /case_t4/t4/case/test.py içinde bulunmaktadır.
+````
+# import mysql.connector
+
+# mydb = mysql.connector.connect(
+#   host="164.92.161.222",
+#   user="root",
+#   password="Challenge_t4"
+# )
+
+# mycursor = mydb.cursor()
+
+# mycursor.execute("SHOW DATABASES")
+
+# for x in mycursor:
+#   print(x)
+````
+
+Veri Tabanı Bağlantısı Yapılmıştır.
+
+
+Dosyadan Okunan veriler ile request atılmıştır ve
+Veritabanındaki mevcut tüm kayıtları silmeli ve boş tablolara dosyadaki verileri yüklemelidir.
+maddesi yapılmıştır.
+````
+# import json
+# import requests
+
+
+# with open('MeetingData.json', 'r') as f:
+#   data = json.load(f)
+
+# js={'data':data}
+# # print(js)
+# res = requests.post("http://164.92.161.222:5000/v1/t4/upload/",data=json.dumps(js))
+
+````
+
+
+
+
+Email adresi girdi olarak verilen bir kişinin ortalama günlük toplantı süresini çıktı olarak döndüren servis
+````
+# import requests
+# res = requests.post('http://127.0.0.1:8000/v1/t4/email',
+#     headers = {
+#         #'User-agent'  : 'Internet Explorer/2.0',
+#         'Content-type': 'application/json'
+#     },
+#     json = {"email": "emma@acompany.com"},
+# )
+# #print(res.headers['content-type'])
+# print(res.text)
+
+````
+
+
+Girdi olarak belirtilen bir email adresi ve tarih için, ilgili kişinin belirtilen tarihte kaç tane çakışan toplantısı olduğunu döndüren servis 
+
+````
+
+# import requests
+# res = requests.post('http://127.0.0.1:8000/v1/t4/meet',
+#     headers = {
+#         #'User-agent'  : 'Internet Explorer/2.0',
+#         'Content-type': 'application/json'
+#     },
+#     json = {
+#         "email": "douglas@acompany.com",
+#         "date":"2022-5-6 10:00"
+#     },
+# )
+# #print(res.headers['content-type'])
+# print(res.text)
+````
+
+Yeni Gelen verilerin Veri tabanında eklenmesi ve güncellenmesi.
+
+````
+# import json
+# import requests
+
+
+# with open('AdditionalMeetingData.json', 'r') as f:
+#   data = json.load(f)
+
+# js={'data':data}
+# # print(js)
+# res = requests.post("http://127.0.0.1:8000/v1/t4/update/",data=json.dumps(js))
+
+````
