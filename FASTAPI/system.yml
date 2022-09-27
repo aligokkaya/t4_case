@@ -1,0 +1,11 @@
+version: '2.3'
+services:
+  fastapi:
+    build:
+      context: ./restapi
+      dockerfile: Dockerfile
+    image: fastapi
+    container_name: bitexen_fastapi
+    restart: always
+    network_mode: "host"
+    

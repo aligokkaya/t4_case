@@ -1,0 +1,310 @@
+[
+  {
+    "meeting_id": "meeting_261",
+    "meeting_attendees": [
+      "john@acompany.com",
+      "olivia@acompany.com",
+      "douglas@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-3 10:00",
+    "meeting_end_datetime": "2022-5-3 11:00",
+    "is_online": true,
+    "organizer": "john@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_935",
+    "meeting_attendees": [
+      "ava@acompany.com",
+      "douglas@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-2 14:30",
+    "meeting_end_datetime": "2022-5-2 15:30",
+    "is_online": false,
+    "organizer": "douglas@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_84",
+    "meeting_attendees": [
+      "helen@acompany.com",
+      "emma@acompany.com",
+      "cynthia@acompany.com",
+      "james@acompany.com",
+      "noah@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-3 16:00",
+    "meeting_end_datetime": "2022-5-3 17:30",
+    "is_online": false,
+    "organizer": "noah@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_13",
+    "meeting_attendees": [
+      "olivia@acompany.com",
+      "john@acompany.com",
+      "douglas@acompany.com",
+      "ava@acompany.com",
+      "helen@acompany.com",
+      "emma@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-2 9:00",
+    "meeting_end_datetime": "2022-5-2 10:30",
+    "is_online": true,
+    "organizer": "ava@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_60",
+    "meeting_attendees": [
+      "emma@acompany.com",
+      "douglas@acompany.com",
+      "william@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-2 10:30",
+    "meeting_end_datetime": "2022-5-2 11:30",
+    "is_online": true,
+    "organizer": "emma@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_350",
+    "meeting_attendees": [
+      "john@acompany.com",
+      "ava@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-4 15:00",
+    "meeting_end_datetime": "2022-5-4 16:00",
+    "is_online": false,
+    "organizer": "ava@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_38",
+    "meeting_attendees": [
+      "john@acompany.com",
+      "harper@acompany.com",
+      "james@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-5 13:30",
+    "meeting_end_datetime": "2022-5-5 14:30",
+    "is_online": true,
+    "organizer": "john@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_6",
+    "meeting_attendees": [
+      "james@acompany.com",
+      "noah@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-3 11:00",
+    "meeting_end_datetime": "2022-5-3 12:00",
+    "is_online": true,
+    "organizer": "james@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_281",
+    "meeting_attendees": [
+      "harper@acompany.com",
+      "cynthia@acompany.com",
+      "william@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-4 14:30",
+    "meeting_end_datetime": "2022-5-4 15:30",
+    "is_online": true,
+    "organizer": "cynthia@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_739",
+    "meeting_attendees": [
+      "cynthia@acompany.com",
+      "william@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-6 9:30",
+    "meeting_end_datetime": "2022-5-6 10:00",
+    "is_online": true,
+    "organizer": "cynthia@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_20",
+    "meeting_attendees": [
+      "william@acompany.com",
+      "douglas@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-6 11:00",
+    "meeting_end_datetime": "2022-5-6 12:00",
+    "is_online": true,
+    "organizer": "douglas@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_324",
+    "meeting_attendees": [
+      "olivia@acompany.com",
+      "william@acompany.com",
+      "cynthia@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-2 16:45",
+    "meeting_end_datetime": "2022-5-2 17:15",
+    "is_online": false,
+    "organizer": "william@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_925",
+    "meeting_attendees": [
+      "douglas@acompany.com",
+      "helen@acompany.com",
+      "emma@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-6 9:00",
+    "meeting_end_datetime": "2022-5-6 10:00",
+    "is_online": true,
+    "organizer": "douglas@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_787",
+    "meeting_attendees": [
+      "john@acompany.com",
+      "douglas@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-5 13:45",
+    "meeting_end_datetime": "2022-5-5 14:45",
+    "is_online": true,
+    "organizer": "douglas@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_490",
+    "meeting_attendees": [
+      "emma@acompany.com",
+      "harper@acompany.com",
+      "cynthia@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-3 15:45",
+    "meeting_end_datetime": "2022-5-3 16:15",
+    "is_online": true,
+    "organizer": "emma@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_751",
+    "meeting_attendees": [
+      "james@acompany.com",
+      "noah@acompany.com",
+      "olivia@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-6 9:00",
+    "meeting_end_datetime": "2022-5-6 11:00",
+    "is_online": true,
+    "organizer": "james@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_194",
+    "meeting_attendees": [
+      "john@acompany.com",
+      "harper@acompany.com",
+      "james@acompany.com",
+      "olivia@acompany.com",
+      "noah@acompany.com",
+      "cynthia@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-4 13:00",
+    "meeting_end_datetime": "2022-5-4 15:00",
+    "is_online": true,
+    "organizer": "john@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_760",
+    "meeting_attendees": [
+      "olivia@acompany.com",
+      "emma@acompany.com",
+      "john@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-4 14:30",
+    "meeting_end_datetime": "2022-5-4 15:00",
+    "is_online": true,
+    "organizer": "cynthia@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_573",
+    "meeting_attendees": [
+      "cynthia@acompany.com",
+      "william@acompany.com",
+      "ava@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-6 9:15",
+    "meeting_end_datetime": "2022-5-6 9:45",
+    "is_online": true,
+    "organizer": "william@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_151",
+    "meeting_attendees": [
+      "ava@acompany.com",
+      "noah@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-2 11:00",
+    "meeting_end_datetime": "2022-5-2 12:00",
+    "is_online": true,
+    "organizer": "ava@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_642",
+    "meeting_attendees": [
+      "john@acompany.com",
+      "douglas@acompany.com",
+      "emma@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-3 17:30",
+    "meeting_end_datetime": "2022-5-3 18:00",
+    "is_online": true,
+    "organizer": "john@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_234",
+    "meeting_attendees": [
+      "olivia@acompany.com",
+      "cynthia@acompany.com",
+      "william@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-6 10:00",
+    "meeting_end_datetime": "2022-5-6 11:00",
+    "is_online": false,
+    "organizer": "cynthia@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_784",
+    "meeting_attendees": [
+      "olivia@acompany.com",
+      "cynthia@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-6 13:00",
+    "meeting_end_datetime": "2022-5-6 14:00",
+    "is_online": false,
+    "organizer": "john@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_597",
+    "meeting_attendees": [
+      "john@acompany.com",
+      "harper@acompany.com",
+      "james@acompany.com",
+      "olivia@acompany.com",
+      "noah@acompany.com",
+      "cynthia@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-6 14:00",
+    "meeting_end_datetime": "2022-5-6 15:00",
+    "is_online": false,
+    "organizer": "harper@acompany.com"
+  },
+  {
+    "meeting_id": "meeting_85",
+    "meeting_attendees": [
+      "john@acompany.com",
+      "olivia@acompany.com",
+      "douglas@acompany.com",
+      "ava@acompany.com",
+      "helen@acompany.com",
+      "emma@acompany.com"
+    ],
+    "meeting_start_datetime": "2022-5-4 15:30",
+    "meeting_end_datetime": "2022-5-4 16:30",
+    "is_online": false,
+    "organizer": "ava@acompany.com"
+  }
+]
+
+
